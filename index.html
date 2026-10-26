@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - ADSLFort</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font: Plus Jakarta Sans for warm modern feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        warm: {
+                            50: '#FAF8F5',
+                            100: '#F4EFE6',
+                            200: '#E6DCB8',
+                            300: '#D6C594',
+                            400: '#C8A359',
+                            500: '#D97736', /* Terracotta Accent */
+                            600: '#C05C1E',
+                            700: '#8C3D0C',
+                            800: '#4A2810',
+                            900: '#2C1B10',
+                        },
+                        amberAccent: '#F59E0B',
+                        warmDark: '#2D2825',
+                        warmBody: '#524B46',
+                        warmCard: '#FFFFFF',
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FAF8F5;
+            color: #524B46;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background-color: #ffffff;
+                color: #000000;
+            }
+            .print-card {
+                box-shadow: none !important;
+                border: 1px solid #e5e7eb !important;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased">
+
+    <!-- Top Header -->
+    <header class="bg-warm-50/90 backdrop-blur-md sticky top-0 z-40 border-b border-warm-200/60 no-print transition-all">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-2xl bg-gradient-to-br from-warm-500 to-amber-500 flex items-center justify-center text-white shadow-md shadow-warm-500/20">
+                    <i class="fa-solid font-bold text-lg fa-shield-halved"></i>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold text-warmDark leading-none">ADSLFort</h1>
+                    <span class="text-xs text-warm-600 font-medium">Privacy & Trust Center</span>
+                </div>
+            </div>
+
+            <div class="flex items-center space-x-2">
+                <button onclick="window.print()" class="px-3.5 py-2 text-xs sm:text-sm font-semibold text-warm-700 bg-warm-100 hover:bg-warm-200/70 rounded-xl transition flex items-center space-x-2 active:scale-95">
+                    <i class="fa-solid fa-print text-warm-600"></i>
+                    <span class="hidden sm:inline">Print / Save PDF</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Sticky Mobile Quick Nav Bar -->
+        <div class="border-t border-warm-200/40 bg-warm-50/95">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 py-2.5 overflow-x-auto hide-scrollbar flex space-x-2 text-xs sm:text-sm font-medium">
+                <a href="#introduction" class="px-3 py-1.5 rounded-full bg-warm-500 text-white whitespace-nowrap shadow-sm hover:opacity-90 transition">Introduction</a>
+                <a href="#collect" class="px-3 py-1.5 rounded-full bg-warm-100 text-warm-800 hover:bg-warm-200 whitespace-nowrap transition">Data Collected</a>
+                <a href="#usage" class="px-3 py-1.5 rounded-full bg-warm-100 text-warm-800 hover:bg-warm-200 whitespace-nowrap transition">How Used</a>
+                <a href="#storage" class="px-3 py-1.5 rounded-full bg-warm-100 text-warm-800 hover:bg-warm-200 whitespace-nowrap transition">Storage & Protection</a>
+                <a href="#third-party" class="px-3 py-1.5 rounded-full bg-warm-100 text-warm-800 hover:bg-warm-200 whitespace-nowrap transition">Third Parties</a>
+                <a href="#rights" class="px-3 py-1.5 rounded-full bg-warm-100 text-warm-800 hover:bg-warm-200 whitespace-nowrap transition">Your Rights</a>
+                <a href="#children" class="px-3 py-1.5 rounded-full bg-warm-100 text-warm-800 hover:bg-warm-200 whitespace-nowrap transition">Children</a>
+                <a href="#contact" class="px-3 py-1.5 rounded-full bg-warm-100 text-warm-800 hover:bg-warm-200 whitespace-nowrap transition">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow max-w-4xl w-full mx-auto px-4 sm:px-6 py-8 sm:py-12 space-y-8">
+
+        <!-- Banner / Hero Section -->
+        <section class="bg-gradient-to-br from-warm-100 via-white to-warm-50 rounded-3xl p-6 sm:p-10 border border-warm-200/80 shadow-sm relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-warm-500/10 rounded-full blur-2xl pointer-events-none"></div>
+            
+            <div class="flex items-center space-x-2 text-warm-600 font-semibold text-xs tracking-wider uppercase mb-3">
+                <span class="inline-block w-2 h-2 rounded-full bg-warm-500 animate-pulse"></span>
+                <span>Effective Date: October 26, 2026</span>
+            </div>
+            
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-warmDark mb-4 leading-tight">
+                Your Privacy is At Home With Us
+            </h2>
+            <p class="text-warmBody text-base sm:text-lg leading-relaxed max-w-2xl">
+                At <span class="font-bold text-warmDark">ADSLFort</span>, we believe that trust is built on honesty and clarity. We treat your personal information with the same warmth, care, and respect we expect for our own.
+            </p>
+
+            <!-- Live Search Bar -->
+            <div class="mt-8 relative max-w-lg no-print">
+                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-warm-400">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input type="text" id="policySearch" onkeyup="filterSections()" placeholder="Search terms (e.g., 'email', 'cookies', 'security')..." 
+                       class="w-full pl-11 pr-4 py-3 bg-white border border-warm-200 rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-warm-500/40 focus:border-warm-500 shadow-sm transition">
+            </div>
+        </section>
+
+        <!-- Dynamic Filter Empty Message -->
+        <div id="noResults" class="hidden text-center py-10 bg-white rounded-3xl border border-warm-200">
+            <i class="fa-solid fa-search text-3xl text-warm-400 mb-3"></i>
+            <p class="text-warmDark font-semibold">No matching terms found</p>
+            <p class="text-xs text-warmBody mt-1">Try searching with a different keyword like "data", "rights", or "contact".</p>
+        </div>
+
+        <!-- Section 1: Introduction & Welcome -->
+        <article id="introduction" class="policy-section bg-white rounded-3xl p-6 sm:p-8 border border-warm-200/70 shadow-sm print-card transition hover:shadow-md">
+            <div class="flex items-start space-x-4">
+                <div class="w-12 h-12 rounded-2xl bg-warm-100 flex-shrink-0 flex items-center justify-center text-warm-600 text-xl font-semibold">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-xl sm:text-2xl font-bold text-warmDark mb-3">1. Welcome & Introduction</h3>
+                    <div class="prose text-warmBody leading-relaxed space-y-3 text-sm sm:text-base">
+                        <p>
+                            Thank you for joining the <strong>ADSLFort</strong> family! We created ADSLFort to provide you with a reliable, secure, and helpful experience. To deliver our services effectively, we need to gather certain information. 
+                        </p>
+                        <p>
+                            This Privacy Policy explains what information we collect, why we collect it, how we safeguard it, and your choices regarding your personal data. By using ADSLFort, you accept the practices outlined in this policy. We promise to keep things simple, transparent, and user-centric.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Section 2: Information We Collect -->
+        <article id="collect" class="policy-section bg-white rounded-3xl p-6 sm:p-8 border border-warm-200/70 shadow-sm print-card transition hover:shadow-md">
+            <div class="flex items-start space-x-4">
+                <div class="w-12 h-12 rounded-2xl bg-warm-100 flex-shrink-0 flex items-center justify-center text-warm-600 text-xl font-semibold">
+                    <i class="fa-solid fa-folder-open"></i>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-xl sm:text-2xl font-bold text-warmDark mb-3">2. Information We Collect</h3>
+                    <p class="text-warmBody text-sm sm:text-base leading-relaxed mb-4">
+                        We only collect information that helps us deliver a seamless and reliable experience. Here is a breakdown of what we may collect:
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                        <div class="bg-warm-50 p-4 rounded-2xl border border-warm-200/50">
+                            <div class="flex items-center space-x-2 font-bold text-warmDark mb-2 text-sm sm:text-base">
+                                <i class="fa-solid fa-envelope text-warm-500"></i>
+                                <span>Information You Provide</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-warmBody">
+                                When you create an account, request customer support, or communicate with us, we collect details such as your email address (e.g., when contacting support at <code class="text-warm-700 font-mono text-xs">nafizco30@gmail.com</code>) and account profile information.
+                            </p>
+                        </div>
+
+                        <div class="bg-warm-50 p-4 rounded-2xl border border-warm-200/50">
+                            <div class="flex items-center space-x-2 font-bold text-warmDark mb-2 text-sm sm:text-base">
+                                <i class="fa-solid fa-mobile-screen-button text-warm-500"></i>
+                                <span>Technical & Device Info</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-warmBody">
+                                To optimize our H5 experience, we automatically collect basic system details such as device model, operating system version, app version, language settings, and IP address.
+                            </p>
+                        </div>
+
+                        <div class="bg-warm-50 p-4 rounded-2xl border border-warm-200/50 md:col-span-2">
+                            <div class="flex items-center space-x-2 font-bold text-warmDark mb-2 text-sm sm:text-base">
+                                <i class="fa-solid fa-chart-line text-warm-500"></i>
+                                <span>Usage & Performance Diagnostics</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-warmBody">
+                                Anonymous data regarding feature interactions, crash reports, and performance metrics. This allows us to quickly troubleshoot issues and enhance speed and responsiveness.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Section 3: How We Use Your Information -->
+        <article id="usage" class="policy-section bg-white rounded-3xl p-6 sm:p-8 border border-warm-200/70 shadow-sm print-card transition hover:shadow-md">
+            <div class="flex items-start space-x-4">
+                <div class="w-12 h-12 rounded-2xl bg-warm-100 flex-shrink-0 flex items-center justify-center text-warm-600 text-xl font-semibold">
+                    <i class="fa-solid fa-sliders"></i>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-xl sm:text-2xl font-bold text-warmDark mb-3">3. How We Use Your Information</h3>
+                    <p class="text-warmBody text-sm sm:text-base leading-relaxed mb-4">
+                        Every piece of data we handle is used with purpose. Specifically, we use your information to:
+                    </p>
+                    <ul class="space-y-3 text-sm sm:text-base text-warmBody">
+                        <li class="flex items-start space-x-3">
+                            <span class="w-5 h-5 rounded-full bg-warm-500 text-white flex items-center justify-center text-xs mt-0.5 flex-shrink-0">✓</span>
+                            <span><strong>Provide Essential Functionality:</strong> Maintain, operate, and deliver the core features of ADSLFort.</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="w-5 h-5 rounded-full bg-warm-500 text-white flex items-center justify-center text-xs mt-0.5 flex-shrink-0">✓</span>
+                            <span><strong>Deliver Responsive Support:</strong> Answer your questions, fix bugs, and offer help when you reach out to us.</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="w-5 h-5 rounded-full bg-warm-500 text-white flex items-center justify-center text-xs mt-0.5 flex-shrink-0">✓</span>
+                            <span><strong>Improve Experience:</strong> Conduct internal research, performance optimization, and refine design features tailored to H5 mobile browsing.</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="w-5 h-5 rounded-full bg-warm-500 text-white flex items-center justify-center text-xs mt-0.5 flex-shrink-0">✓</span>
+                            <span><strong>Maintain Safety:</strong> Protect against unauthorized activity, fraud, and ensure robust digital security.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- Section 4: Data Storage & Protection -->
+        <article id="storage" class="policy-section bg-white rounded-3xl p-6 sm:p-8 border border-warm-200/70 shadow-sm print-card transition hover:shadow-md">
+            <div class="flex items-start space-x-4">
+                <div class="w-12 h-12 rounded-2xl bg-warm-100 flex-shrink-0 flex items-center justify-center text-warm-600 text-xl font-semibold">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-xl sm:text-2xl font-bold text-warmDark mb-3">4. Data Storage & Safeguards</h3>
+                    <div class="space-y-4 text-sm sm:text-base text-warmBody leading-relaxed">
+                        <p>
+                            We employ modern industry-standard physical, technical, and administrative measures to safeguard your personal data against unauthorized access, loss, misuse, or alteration.
+                        </p>
+                        <div class="p-4 bg-warm-50 rounded-2xl border-l-4 border-warm-500 text-xs sm:text-sm">
+                            <span class="font-bold text-warmDark">Retention Period:</span> We retain your personal data only as long as necessary to fulfill the purposes outlined in this privacy policy, or as required by law. Once no longer needed, data is securely erased or anonymized.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Section 5: Third-Party Services & Analytics -->
+        <article id="third-party" class="policy-section bg-white rounded-3xl p-6 sm:p-8 border border-warm-200/70 shadow-sm print-card transition hover:shadow-md">
+            <div class="flex items-start space-x-4">
+                <div class="w-12 h-12 rounded-2xl bg-warm-100 flex-shrink-0 flex items-center justify-center text-warm-600 text-xl font-semibold">
+                    <i class="fa-solid fa-handshake"></i>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-xl sm:text-2xl font-bold text-warmDark mb-3">5. Third-Party Services</h3>
+                    <div class="space-y-3 text-sm sm:text-base text-warmBody leading-relaxed">
+                        <p class="font-medium text-warmDark">
+                            <strong>We never sell your personal data.</strong> Period.
+                        </p>
+                        <p>
+                            To ensure high performance, ADSLFort may partner with trusted third-party analytics or infrastructure services (such as cloud hosting and error monitoring tools). These partners only access data necessary to perform specific tasks on our behalf and are bound by strict confidentiality standards matching this policy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Section 6: Your Privacy Rights & Choices -->
+        <article id="rights" class="policy-section bg-white rounded-3xl p-6 sm:p-8 border border-warm-200/70 shadow-sm print-card transition hover:shadow-md">
+            <div class="flex items-start space-x-4">
+                <div class="w-12 h-12 rounded-2xl bg-warm-100 flex-shrink-0 flex items-center justify-center text-warm-600 text-xl font-semibold">
+                    <i class="fa-solid fa-user-gear"></i>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-xl sm:text-2xl font-bold text-warmDark mb-3">6. Your Rights & Control</h3>
+                    <p class="text-warmBody text-sm sm:text-base leading-relaxed mb-4">
+                        You maintain full ownership of your personal information. Depending on your jurisdiction, you hold the following rights:
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div class="p-3.5 bg-warm-50 rounded-xl text-xs sm:text-sm font-medium text-warmDark border border-warm-200/40">
+                            <i class="fa-solid fa-eye text-warm-500 mr-2"></i> Right to Access & Review
+                        </div>
+                        <div class="p-3.5 bg-warm-50 rounded-xl text-xs sm:text-sm font-medium text-warmDark border border-warm-200/40">
+                            <i class="fa-solid fa-pen-to-square text-warm-500 mr-2"></i> Right to Rectify / Update
+                        </div>
+                        <div class="p-3.5 bg-warm-50 rounded-xl text-xs sm:text-sm font-medium text-warmDark border border-warm-200/40">
+                            <i class="fa-solid fa-trash-can text-warm-500 mr-2"></i> Right to Erase / Delete Data
+                        </div>
+                        <div class="p-3.5 bg-warm-50 rounded-xl text-xs sm:text-sm font-medium text-warmDark border border-warm-200/40">
+                            <i class="fa-solid fa-ban text-warm-500 mr-2"></i> Right to Opt-Out / Restrict Processing
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Section 7: Children's Privacy -->
+        <article id="children" class="policy-section bg-white rounded-3xl p-6 sm:p-8 border border-warm-200/70 shadow-sm print-card transition hover:shadow-md">
+            <div class="flex items-start space-x-4">
+                <div class="w-12 h-12 rounded-2xl bg-warm-100 flex-shrink-0 flex items-center justify-center text-warm-600 text-xl font-semibold">
+                    <i class="fa-solid fa-child font-bold"></i>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-xl sm:text-2xl font-bold text-warmDark mb-3">7. Children's Privacy</h3>
+                    <p class="text-warmBody text-sm sm:text-base leading-relaxed">
+                        ADSLFort does not knowingly collect or solicit personal information from anyone under the age of 13. If we learn that we have inadvertently gathered personal data from a child under 13 without verification of parental consent, we will promptly delete that information.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Section 8: Updates to Policy -->
+        <article id="updates" class="policy-section bg-white rounded-3xl p-6 sm:p-8 border border-warm-200/70 shadow-sm print-card transition hover:shadow-md">
+            <div class="flex items-start space-x-4">
+                <div class="w-12 h-12 rounded-2xl bg-warm-100 flex-shrink-0 flex items-center justify-center text-warm-600 text-xl font-semibold">
+                    <i class="fa-solid fa-rotate text-lg"></i>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-xl sm:text-2xl font-bold text-warmDark mb-3">8. Policy Updates</h3>
+                    <p class="text-warmBody text-sm sm:text-base leading-relaxed">
+                        We may update this Privacy Policy from time to time to reflect changes in legal requirements or app enhancements. When updates occur, we will revise the "Effective Date" at the top of this policy and provide prominent notice within the app where appropriate.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Section 9: Highlighted Contact Us Card -->
+        <article id="contact" class="policy-section bg-gradient-to-br from-warm-800 to-warm-900 text-white rounded-3xl p-6 sm:p-10 shadow-xl relative overflow-hidden print-card">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-warm-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                <div>
+                    <span class="px-3 py-1 bg-warm-700/60 text-warm-200 text-xs font-semibold rounded-full border border-warm-600/50 uppercase tracking-wide">
+                        We're Here For You
+                    </span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-3 mb-2">Have Questions or Concerns?</h3>
+                    <p class="text-warm-200 text-sm sm:text-base max-w-lg leading-relaxed">
+                        If you have any questions, wish to exercise your data rights, or simply want to say hello, our team is always ready to assist.
+                    </p>
+                </div>
+
+                <div class="w-full md:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+                    <a href="mailto:nafizco30@gmail.com" class="px-6 py-3.5 bg-gradient-to-r from-warm-500 to-amber-500 hover:from-warm-600 hover:to-amber-600 text-white font-bold rounded-2xl shadow-lg transition flex items-center justify-center space-x-2 active:scale-95 text-center">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Email Support</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-warm-700/60 flex flex-col sm:flex-row justify-between items-start sm:items-center text-xs text-warm-300 gap-2">
+                <div>
+                    Direct Contact: <a href="mailto:nafizco30@gmail.com" class="underline font-mono text-warm-200 hover:text-white">nafizco30@gmail.com</a>
+                </div>
+                <div>
+                    Response time: Usually within 24–48 hours
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- Warm Minimal Footer -->
+    <footer class="bg-warm-100/60 border-t border-warm-200/60 py-8 no-print mt-8">
+        <div class="max-w-4xl mx-auto px-4 text-center text-xs text-warmBody space-y-2">
+            <div class="flex items-center justify-center space-x-2 font-bold text-warmDark text-sm mb-1">
+                <i class="fa-solid fa-shield-halved text-warm-500"></i>
+                <span>ADSLFort</span>
+            </div>
+            <p>© 2026 ADSLFort. All rights reserved.</p>
+            <p class="text-warm-600">Designed with warmth, clarity, and security in mind.</p>
+        </div>
+    </footer>
+
+    <!-- Search Filtering Script -->
+    <script>
+        function filterSections() {
+            const input = document.getElementById('policySearch').value.toLowerCase();
+            const sections = document.querySelectorAll('.policy-section');
+            let visibleCount = 0;
+
+            sections.forEach(section => {
+                const text = section.innerText.toLowerCase();
+                if (text.includes(input)) {
+                    section.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+
+            const noResults = document.getElementById('noResults');
+            if (visibleCount === 0) {
+                noResults.classList.remove('hidden');
+            } else {
+                noResults.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
